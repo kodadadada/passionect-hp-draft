@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>商品一覧 | パスコネ（Passionect）</title>
+<meta name="description" content="パスコネの配信者向けテンプレート商品の一覧です。ご購入はBOOTHから行えます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@700;900&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <div class="page-head">
+    <div class="wrap">
+      <h1>商品一覧</h1>
+      <p>配信者向けのテンプレートを販売しています。ご購入は各商品のBOOTHページから行えます。</p>
+    </div>
+  </div>
+
+  <section class="band">
+    <div class="wrap">
+      <!-- 商品は data/products.json に1件足すと増える -->
+      <ul class="product-list" data-products></ul>
+      <div class="more actions">
+        <a class="btn" data-booth href="https://booth.pm/" target="_blank" rel="noopener">BOOTHのショップを見る</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

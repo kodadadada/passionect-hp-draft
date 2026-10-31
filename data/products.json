@@ -1,0 +1,38 @@
+[
+  {
+    "name": "商品名（サンプル）",
+    "summary": "商品の特徴を一言で書きます。",
+    "image": "",
+    "use": "どんな配信で使うか",
+    "software": "対応ソフト名",
+    "environment": "動作に必要な環境",
+    "terms": "利用条件・注意事項",
+    "boothUrl": "",
+    "featured": true,
+    "sample": true
+  },
+  {
+    "name": "商品名（サンプル）",
+    "summary": "商品の特徴を一言で書きます。",
+    "image": "",
+    "use": "どんな配信で使うか",
+    "software": "対応ソフト名",
+    "environment": "動作に必要な環境",
+    "terms": "利用条件・注意事項",
+    "boothUrl": "",
+    "featured": true,
+    "sample": true
+  },
+  {
+    "name": "商品名（サンプル）",
+    "summary": "商品の特徴を一言で書きます。",
+    "image": "",
+    "use": "どんな配信で使うか",
+    "software": "対応ソフト名",
+    "environment": "動作に必要な環境",
+    "terms": "利用条件・注意事項",
+    "boothUrl": "",
+    "featured": true,
+    "sample": true
+  }
+]

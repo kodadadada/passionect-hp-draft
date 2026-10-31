@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>パスコネ（Passionect）</title>
+<meta name="description" content="好きをつなげて、未来を広げる。パスコネは配信者向けテンプレートの企画・販売と、配信活動の支援を行っています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@700;900&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1><span class="nb">好きをつなげて、</span><span class="nb">未来を広げる</span></h1>
+          <p class="lead">パスコネは、配信者向けテンプレートの企画・販売と、配信活動の支援を行っています。</p>
+          <a class="btn" href="contact.html">仕事を相談する</a>
+        </div>
+        <div>
+          <div class="stream" data-ui>
+            <div class="stream-stage">
+              <div class="stream-top">
+                <span class="stream-live">LIVE</span>
+                <span>つながった好き <span id="stream-count">3</span></span>
+              </div>
+              <p class="stream-title">今日は好きなものを語る雑談</p>
+            </div>
+            <ul class="stream-comments" id="stream-comments">
+              <li><b>リスナーA</b>お茶が好き！</li>
+              <li><b>リスナーB</b>深夜ラジオが好き！</li>
+              <li><b>リスナーC</b>猫が好き！</li>
+            </ul>
+          </div>
+          <form class="say" id="say" hidden>
+            <label for="say-text">あなたの「好き」をコメントしてみる</label>
+            <input id="say-text" type="text" maxlength="16" placeholder="例：ゲーム" autocomplete="off">
+            <button type="submit">コメントする</button>
+          </form>
+          <p class="stream-note">配信画面のイメージです。入力した内容は送信されません。</p>
+        </div>
+      </div>
+      <nav class="tabs" aria-label="ページの切り替え" data-tabs></nav>
+    </div>
+  </section>
+
+  <section class="band soft">
+    <div class="wrap split">
+      <div class="sheet">
+        <h2 class="creed">「好き」を繋げる。</h2>
+        <div class="prose">
+          <p>クリエイターが自分の「好き」を大切にして活動を続けられる環境をつくることが、パスコネの目指す未来です。</p>
+          <p><a class="link" href="about.html">パスコネについて詳しく見る</a></p>
+        </div>
+      </div>
+      <div class="news">
+        <h2>お知らせ</h2>
+        <ul data-news></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head">
+        <h2>事業内容</h2>
+      </div>
+      <ul class="cards">
+        <li class="card">
+          <h3>テンプレート販売</h3>
+          <span class="status">提供中</span>
+          <p>配信者向けのテンプレートを企画し、BOOTHで販売しています。</p>
+        </li>
+        <li class="card">
+          <h3>配信支援サービス</h3>
+          <span class="status">展開中</span>
+          <p>配信活動に関する支援を、順次サービスとして広げています。</p>
+        </li>
+        <li class="card">
+          <h3>活動を続けられる環境づくり</h3>
+          <span class="status">今後の構想</span>
+          <p>クリエイターが「好き」を大切にして活動を続けられる環境づくりに取り組みます。</p>
+        </li>
+      </ul>
+      <p class="more"><a class="link" href="business.html">事業紹介を見る</a></p>
+    </div>
+  </section>
+
+  <section class="band tint">
+    <div class="wrap">
+      <div class="head">
+        <h2>主な商品</h2>
+      </div>
+      <div class="product-index" data-product-index></div>
+      <p class="more"><a class="link" href="products.html">商品一覧を見る</a></p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2><span class="nb">商品を探す？</span> <span class="nb">相談する？</span></h2>
+      <div class="actions">
+        <a class="btn" data-booth href="https://booth.pm/" target="_blank" rel="noopener">BOOTHで探す</a>
+        <a class="btn alt" href="contact.html">仕事を相談する</a>
+      </div>
+      <p>お取引や協業のご相談も受け付けています。</p>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/site.js"></script>
+</body>
+</html>
