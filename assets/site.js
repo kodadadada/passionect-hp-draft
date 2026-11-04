@@ -18,7 +18,6 @@ const TABS = [
 // TODO: ショップURLに変更
 const BOOTH_URL = 'https://booth.pm/';
 
-document.documentElement.classList.add('js');
 const here = location.pathname.split('/').pop() || 'index.html';
 
 function el(tag, className, text) {
@@ -204,7 +203,6 @@ async function renderProducts() {
   } catch {
     (list || index).replaceChildren(el('p', '', '商品情報を読み込めませんでした。BOOTHのショップページをご覧ください。'));
   }
-  setupReveal();
 }
 
 async function renderNews() {
@@ -258,26 +256,6 @@ function setupStream() {
   });
 }
 
-let observer;
-function setupReveal() {
-  const parts = document.querySelectorAll('main .page-head h1, main .page-head p, main h2, main .prose, main .sheet, main .card, main .news, main .index-rows li, main .index-plate, main .product, main .facts, main .bullets, main .steps, main .cta p, main .actions');
-  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  observer ??= new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('in');
-      observer.unobserve(entry.target);
-    });
-  }, { rootMargin: '0px 0px -8% 0px' });
-  parts.forEach((part) => {
-    if (part.classList.contains('rise')) return;
-    const siblings = [...part.parentElement.children].indexOf(part);
-    part.style.setProperty('--d', `${Math.min(siblings, 4) * 75}ms`);
-    part.classList.add('rise');
-    observer.observe(part);
-  });
-}
-
 renderHeader();
 renderFooter();
 renderTabs();
@@ -286,4 +264,3 @@ setupFormButton();
 setupStream();
 renderProducts();
 renderNews();
-setupReveal();
