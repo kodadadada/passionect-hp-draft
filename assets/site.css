@@ -13,6 +13,7 @@
   --accent: #C2410C;
   --deep: #CC5000;       /* 白文字を載せる面 */
   --deep-2: #B85A00;     /* 商品見本の2枚目の地 */
+  --button: #D9600F;     /* ボタンの地。白文字は19pxの太字で3:1以上 */
   --note: #FFF1A8;
   --display: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
   --body: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
@@ -84,9 +85,9 @@ img { max-width: 100%; display: block; }
   border: 0;
   border-radius: 999px;
   padding: 13px 28px;
-  background: var(--deep);
+  background: var(--button);
   color: var(--paper);
-  font: 700 var(--step-body)/1.5 var(--body);
+  font: 700 19px/1.5 var(--body);
   text-decoration: none;
   cursor: pointer;
   transition: transform .15s ease;
