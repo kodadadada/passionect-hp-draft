@@ -7,7 +7,7 @@
   --soft: #FFEFC2;
   --tone: #FFF8E6;
   --paper: #FFFFFF;
-  --ink: #A33F00;        /* 文字。白地と淡い面の上で読める濃いオレンジ */
+  --ink: #B34E10;        /* 文字。白地と淡い面の上で読める濃いオレンジ */
   --ink-strong: #8A3300; /* グラデーションの上に置く小さい文字 */
   --ink-soft: #B3541E;
   --accent: #C2410C;
@@ -287,3 +287,7 @@ img { max-width: 100%; display: block; }
   .page-head .tabs a { clip-path: none; }
 }
 .space-top { margin-top: 16px; }
+
+/* 黄色の面と、グラデーションの上の小さめの文字は、読みやすさのため濃い方の文字色にする */
+.stream-live, .say button, .tabs a:nth-child(4), .page-head .tabs a, .index-rows a.on, .index-rows a:hover, .cta p { color: var(--ink-strong); }
+.page-head .tabs a[aria-current] { color: var(--accent); }
